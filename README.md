@@ -1,11 +1,18 @@
-# Marketplace Demo
+# 开放平台部门插件市场
 
-这是一个符合 Claude Code 规范的插件市场仓库，用于分发和管理插件。
+这是一个符合 Claude Code 规范的插件市场仓库，由开放平台部门维护，用于分发和管理插件。
 
 ## 目录结构
 
 - `.claude-plugin/marketplace.json` - 市场配置文件
 - `plugins/` - 插件目录
+
+## 当前插件
+
+### Grafana日志查看器
+- 名称: grafana-log-viewer
+- 功能: 通过MCP查看Grafana日志
+- MCP配置: 连接到gitlab.xaminim.com上的debug-mcp服务
 
 ## 市场配置
 

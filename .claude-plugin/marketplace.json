@@ -1,25 +1,37 @@
 {
-  "name": "my-marketplace",
+  "name": "open-platform-marketplace",
   "owner": {
-    "name": "My Marketplace Team",
-    "email": "marketplace@example.com"
+    "name": "开放平台部门",
+    "email": "open-platform@example.com"
   },
   "metadata": {
-    "description": "My personal plugin marketplace",
+    "description": "开放平台部门插件市场",
     "version": "1.0.0",
     "pluginRoot": "./plugins"
   },
   "plugins": [
     {
-      "name": "sample-plugin",
-      "source": "./plugins/sample-plugin",
-      "description": "示例插件",
+      "name": "grafana-log-viewer",
+      "source": "./plugins/grafana-log-viewer",
+      "description": "通过MCP查看Grafana日志",
       "version": "1.0.0",
       "author": {
-        "name": "My Marketplace Team"
+        "name": "开放平台部门"
       },
-      "category": "development",
-      "tags": ["sample", "demo"]
+      "category": "monitoring",
+      "tags": ["grafana", "logs", "mcp"],
+      "mcpServers": {
+        "debug": {
+          "command": "uvx",
+          "type": "stdio",
+          "enable": true,
+          "args": [
+            "--from",
+            "git+https://gitlab.xaminim.com/matrix/debug-mcp.git@dev",
+            "debug-mcp"
+          ]
+        }
+      }
     }
   ]
 }

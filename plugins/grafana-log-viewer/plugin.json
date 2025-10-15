@@ -1,0 +1,24 @@
+{
+  "name": "grafana-log-viewer",
+  "version": "1.0.0",
+  "description": "通过MCP查看Grafana日志",
+  "author": {
+    "name": "开放平台部门",
+    "email": "open-platform@example.com"
+  },
+  "license": "MIT",
+  "category": "monitoring",
+  "tags": ["grafana", "logs", "mcp"],
+  "mcpServers": {
+    "debug": {
+      "command": "uvx",
+      "type": "stdio",
+      "enable": true,
+      "args": [
+        "--from",
+        "git+https://gitlab.xaminim.com/matrix/debug-mcp.git@dev",
+        "debug-mcp"
+      ]
+    }
+  }
+}
