@@ -1,11 +1,11 @@
 {
   "name": "open-platform-marketplace",
   "owner": {
-    "name": "开放平台部门",
-    "email": "open-platform@example.com"
+    "name": "开放平台",
+    "email": "mingxuan@minimax.com"
   },
   "metadata": {
-    "description": "开放平台部门插件市场",
+    "description": "开放平台插件市场",
     "version": "1.0.0",
     "pluginRoot": "./plugins"
   },
