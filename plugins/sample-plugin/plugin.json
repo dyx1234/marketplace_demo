@@ -1,0 +1,13 @@
+{
+  "name": "sample-plugin",
+  "version": "1.0.0",
+  "description": "示例插件",
+  "author": {
+    "name": "My Marketplace Team",
+    "email": "marketplace@example.com"
+  },
+  "license": "MIT",
+  "commands": "./commands",
+  "agents": "./agents",
+  "hooks": "./hooks"
+}

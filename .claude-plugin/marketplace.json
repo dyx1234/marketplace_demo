@@ -1,0 +1,25 @@
+{
+  "name": "my-marketplace",
+  "owner": {
+    "name": "My Marketplace Team",
+    "email": "marketplace@example.com"
+  },
+  "metadata": {
+    "description": "My personal plugin marketplace",
+    "version": "1.0.0",
+    "pluginRoot": "./plugins"
+  },
+  "plugins": [
+    {
+      "name": "sample-plugin",
+      "source": "./plugins/sample-plugin",
+      "description": "示例插件",
+      "version": "1.0.0",
+      "author": {
+        "name": "My Marketplace Team"
+      },
+      "category": "development",
+      "tags": ["sample", "demo"]
+    }
+  ]
+}
